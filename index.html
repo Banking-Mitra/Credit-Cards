@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Credit Card Guide - Your complete resource for credit card tips, questions, answers, rewards, fees, and smart financial decisions. Learn everything about credit cards." />
+  <meta name="keywords" content="credit card, credit card tips, credit card rewards, credit card fees, best credit cards, credit score, credit card QnA, how credit cards work" />
+  <meta name="author" content="CreditCardGuide.info" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Credit Card Guide – Complete Q&A & Tips" />
+  <meta property="og:description" content="Everything you need to know about credit cards – rewards, fees, interest rates, credit scores, and more." />
+  <meta property="og:type" content="website" />
+  <title>Credit Card Guide – Complete Q&A, Tips & Expert Advice</title>
+
+  <!-- Google AdSense Auto Ads – Replace ca-pub-XXXXXXXXXXXXXXXX with your Publisher ID -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #0a1628;
+      --navy2: #112240;
+      --gold: #c9a84c;
+      --gold-light: #e8c96e;
+      --cream: #faf7f0;
+      --text: #1a1a2e;
+      --muted: #5a6475;
+      --border: #e2ddd4;
+      --card-bg: #ffffff;
+      --accent: #1e3a5f;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--navy);
+      padding: 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: auto;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--gold);
+      text-decoration: none;
+      letter-spacing: 0.03em;
+    }
+    .logo span { color: #fff; }
+    nav { display: flex; gap: 6px; flex-wrap: wrap; }
+    nav a {
+      color: #ccd6f6;
+      text-decoration: none;
+      font-size: 0.82rem;
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1px solid transparent;
+      transition: all 0.2s;
+      font-family: 'Source Serif 4', serif;
+    }
+    nav a:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 60%, #1a3a6e 100%);
+      padding: 80px 24px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(201,168,76,0.12) 0%, transparent 60%);
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(201,168,76,0.15);
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 5px 16px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 18px;
+      position: relative;
+    }
+    .hero h1 em { color: var(--gold); font-style: normal; }
+    .hero p {
+      color: #a8b8d8;
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin: 0 auto 28px;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 36px;
+    }
+    .stat { text-align: center; }
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--gold);
+      display: block;
+    }
+    .stat-label { color: #8892b0; font-size: 0.8rem; letter-spacing: 0.05em; }
+
+    /* ── WRAPPER ── */
+    .wrapper {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    /* ── SECTION TITLES ── */
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .section-sub {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 32px;
+    }
+    .section-header { margin: 52px 0 0; }
+    .gold-line {
+      width: 48px;
+      height: 3px;
+      background: var(--gold);
+      border-radius: 2px;
+      margin-bottom: 10px;
+    }
+
+    /* ── TOPICS GRID ── */
+    .topics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+      gap: 14px;
+      margin: 28px 0;
+    }
+    .topic-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px 16px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.25s;
+      text-decoration: none;
+      color: var(--text);
+    }
+    .topic-card:hover {
+      border-color: var(--gold);
+      box-shadow: 0 6px 24px rgba(201,168,76,0.15);
+      transform: translateY(-2px);
+    }
+    .topic-icon { font-size: 1.8rem; margin-bottom: 8px; display: block; }
+    .topic-card h3 { font-size: 0.85rem; font-weight: 600; color: var(--navy); }
+
+    /* ── QnA SECTIONS ── */
+    .qna-section { margin: 48px 0; }
+    .qna-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--navy);
+      padding: 14px 20px;
+      background: linear-gradient(to right, var(--navy), var(--accent));
+      color: #fff;
+      border-radius: 10px 10px 0 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .faq-list { border: 1px solid var(--border); border-top: none; border-radius: 0 0 10px 10px; overflow: hidden; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 18px 22px;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: var(--text);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      transition: background 0.2s;
+    }
+    .faq-q:hover { background: #f9f5ee; }
+    .faq-q.open { color: var(--accent); background: #f3f0e8; }
+    .faq-arrow { transition: transform 0.3s; font-size: 0.8rem; flex-shrink: 0; color: var(--gold); }
+    .faq-q.open .faq-arrow { transform: rotate(180deg); }
+    .faq-a {
+      display: none;
+      padding: 0 22px 20px 22px;
+      color: #3a3a4a;
+      font-size: 0.93rem;
+      line-height: 1.8;
+      background: #fdfaf4;
+    }
+    .faq-a.open { display: block; }
+    .faq-a p { margin-bottom: 10px; }
+    .faq-a ul { padding-left: 20px; margin: 8px 0; }
+    .faq-a ul li { margin-bottom: 6px; }
+    .faq-a strong { color: var(--navy); }
+
+    /* ── TIPS BOX ── */
+    .tip-box {
+      background: linear-gradient(135deg, #fff9ec, #fff4d6);
+      border-left: 4px solid var(--gold);
+      border-radius: 0 10px 10px 0;
+      padding: 18px 22px;
+      margin: 24px 0;
+    }
+    .tip-box h4 { color: var(--navy); font-family: 'Playfair Display', serif; margin-bottom: 8px; }
+
+    /* ── INFO CARDS ── */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      margin: 28px 0;
+    }
+    .info-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      transition: box-shadow 0.2s;
+    }
+    .info-card:hover { box-shadow: 0 8px 30px rgba(0,0,0,0.08); }
+    .info-card h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--navy); margin-bottom: 10px; }
+    .info-card p { color: var(--muted); font-size: 0.88rem; }
+    .card-icon { font-size: 2rem; margin-bottom: 12px; display: block; }
+
+    /* ── TABLE ── */
+    .table-wrap { overflow-x: auto; margin: 24px 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    th {
+      background: var(--navy);
+      color: #fff;
+      padding: 12px 16px;
+      text-align: left;
+      font-family: 'Source Serif 4', serif;
+    }
+    td { padding: 11px 16px; border-bottom: 1px solid var(--border); }
+    tr:nth-child(even) td { background: #faf6ee; }
+    tr:hover td { background: #f3ede0; }
+
+    /* ── GLOSSARY ── */
+    .glossary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .gloss-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px 20px;
+    }
+    .gloss-term { font-weight: 700; color: var(--navy); font-size: 0.95rem; margin-bottom: 5px; }
+    .gloss-def { color: var(--muted); font-size: 0.86rem; }
+
+    /* ── CHECKLIST ── */
+    .checklist { list-style: none; padding: 0; margin: 16px 0; }
+    .checklist li { padding: 8px 0 8px 32px; position: relative; border-bottom: 1px solid #f0ece4; font-size: 0.92rem; }
+    .checklist li::before { content: '✓'; position: absolute; left: 0; color: var(--gold); font-weight: bold; font-size: 1rem; }
+
+    /* ── ABOUT/CONTACT/PRIVACY ── */
+    .page-section {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 36px;
+      margin: 40px 0;
+    }
+    .page-section h2 { font-family: 'Playfair Display', serif; color: var(--navy); font-size: 1.6rem; margin-bottom: 16px; }
+    .page-section p { color: #444; margin-bottom: 14px; font-size: 0.93rem; }
+
+    /* ── CONTACT FORM ── */
+    .contact-form { display: grid; gap: 16px; margin-top: 20px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-group label { font-size: 0.82rem; font-weight: 600; color: var(--navy); }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border 0.2s;
+      background: var(--cream);
+    }
+    .form-group input:focus,
+    .form-group textarea:focus { border-color: var(--gold); }
+    .btn-submit {
+      background: var(--navy);
+      color: #fff;
+      border: none;
+      padding: 13px 32px;
+      border-radius: 8px;
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+      align-self: start;
+    }
+    .btn-submit:hover { background: var(--gold); color: var(--navy); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: #8892b0;
+      padding: 48px 24px 24px;
+      margin-top: 60px;
+    }
+    .footer-inner { max-width: 1200px; margin: auto; }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-brand p { font-size: 0.85rem; margin-top: 12px; line-height: 1.7; }
+    .footer-col h4 { color: var(--gold); font-family: 'Playfair Display', serif; margin-bottom: 14px; font-size: 0.95rem; }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 9px; }
+    .footer-col ul li a { color: #8892b0; text-decoration: none; font-size: 0.84rem; transition: color 0.2s; }
+    .footer-col ul li a:hover { color: var(--gold); }
+    .footer-bottom {
+      border-top: 1px solid #1e3a5f;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 0.8rem;
+    }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { color: #8892b0; text-decoration: none; }
+    .footer-links a:hover { color: var(--gold); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .hero-stats { gap: 24px; }
+    }
+    @media (max-width: 480px) {
+      .footer-grid { grid-template-columns: 1fr; }
+      nav a { font-size: 0.75rem; padding: 5px 10px; }
+    }
+
+    /* ── SCROLL ANIMATION ── */
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.5s, transform 0.5s; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── SCROLL OFFSET for sticky header ── */
+    #home, #basics, #applying, #rewards, #fees, #interest,
+    #credit-score, #balance, #security, #types, #travel,
+    #business, #glossary, #about, #privacy, #contact {
+      scroll-margin-top: 72px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════ HEADER ══════════════ -->
+<header>
+  <div class="header-inner">
+    <a href="#home" class="logo">💳 Credit<span>CardGuide</span></a>
+    <nav>
+      <a href="#basics">Basics</a>
+      <a href="#rewards">Rewards</a>
+      <a href="#fees">Fees</a>
+      <a href="#credit-score">Credit Score</a>
+      <a href="#security">Security</a>
+      <a href="#glossary">Glossary</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero" id="home">
+  <div class="hero-badge">Your Free Credit Card Resource</div>
+  <h1>Everything You Need to Know About<br><em>Credit Cards</em></h1>
+  <p>Expert answers to the most common credit card questions — from choosing your first card to maximizing rewards and protecting your credit score.</p>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-num">100+</span><span class="stat-label">Q&A Topics</span></div>
+    <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Categories</span></div>
+    <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Free Advice</span></div>
+  </div>
+</section>
+
+
+
+<!-- ══════════════ TOPICS NAV ══════════════ -->
+<div class="wrapper">
+  <div class="section-header fade-in">
+    <div class="gold-line"></div>
+    <h2 class="section-title">Browse by Topic</h2>
+    <p class="section-sub">Click any topic to jump to detailed Q&A answers.</p>
+  </div>
+  <div class="topics-grid fade-in">
+    <a href="#basics" class="topic-card"><span class="topic-icon">📘</span><h3>CC Basics</h3></a>
+    <a href="#applying" class="topic-card"><span class="topic-icon">📝</span><h3>Applying for a Card</h3></a>
+    <a href="#rewards" class="topic-card"><span class="topic-icon">🎁</span><h3>Rewards & Cashback</h3></a>
+    <a href="#fees" class="topic-card"><span class="topic-icon">💰</span><h3>Fees & Charges</h3></a>
+    <a href="#interest" class="topic-card"><span class="topic-icon">📈</span><h3>Interest & APR</h3></a>
+    <a href="#credit-score" class="topic-card"><span class="topic-icon">⭐</span><h3>Credit Score</h3></a>
+    <a href="#balance" class="topic-card"><span class="topic-icon">⚖️</span><h3>Balance & Payments</h3></a>
+    <a href="#security" class="topic-card"><span class="topic-icon">🔒</span><h3>Fraud & Security</h3></a>
+    <a href="#types" class="topic-card"><span class="topic-icon">💳</span><h3>Types of Cards</h3></a>
+    <a href="#travel" class="topic-card"><span class="topic-icon">✈️</span><h3>Travel Cards</h3></a>
+    <a href="#business" class="topic-card"><span class="topic-icon">🏢</span><h3>Business Cards</h3></a>
+    <a href="#glossary" class="topic-card"><span class="topic-icon">📖</span><h3>Glossary</h3></a>
+  </div>
+</div>
+
+<!-- ══════════════ BASICS ══════════════ -->
+<div class="wrapper" id="basics">
+  <div class="qna-section fade-in">
+    <h2>📘 Credit Card Basics</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is a credit card and how does it work? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>A credit card is a payment card issued by a financial institution that allows you to borrow money up to a pre-set credit limit. When you make a purchase, the bank pays the merchant on your behalf. You then repay the bank — either in full each month or in installments, with interest.</p>
+          <p>Every month you receive a statement showing your purchases. You have two choices: pay the full balance (no interest charged) or pay the minimum (interest accrues on the remaining balance).</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is a credit limit? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>Your credit limit is the maximum amount you're allowed to borrow on a credit card at any one time. For example, if your limit is ₹1,00,000, you cannot make purchases that push your total balance above that amount.</p>
+          <p>Credit limits are set by the issuer based on your income, credit score, and credit history. You can request an increase after demonstrating responsible usage.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is the difference between a credit card and a debit card? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <ul>
+            <li><strong>Debit card:</strong> Spends your own money directly from your bank account.</li>
+            <li><strong>Credit card:</strong> Borrows money from the bank; you repay later.</li>
+            <li><strong>Credit building:</strong> Credit cards help build credit history; debit cards do not.</li>
+            <li><strong>Rewards:</strong> Credit cards typically offer better rewards and protections.</li>
+            <li><strong>Risk:</strong> Debit cards expose your actual bank balance if compromised; credit cards offer stronger fraud protection.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is a billing cycle? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>A billing cycle is the period (usually 28–31 days) during which all your transactions are recorded. At the end of the cycle, the bank generates your statement showing the total balance owed. You then have a grace period (typically 20–25 days) to pay before interest is charged.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is a grace period? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>The grace period is the window of time between the end of your billing cycle and your payment due date — typically 21 to 25 days. If you pay your full statement balance before this deadline, <strong>you pay zero interest</strong> on purchases made during that cycle. Carrying a balance from month to month eliminates the grace period.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ══════════════ APPLYING ══════════════ -->
+<div class="wrapper" id="applying">
+  <div class="qna-section fade-in">
+    <h2>📝 Applying for a Credit Card</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What documents are needed to apply for a credit card? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>Typical documents required include:</p>
+          <ul>
+            <li><strong>Identity proof:</strong> Aadhaar card, PAN card, passport, voter ID</li>
+            <li><strong>Address proof:</strong> Utility bill, Aadhaar, rental agreement</li>
+            <li><strong>Income proof:</strong> Salary slips (last 3 months), ITR, Form 16, or bank statements</li>
+            <li><strong>Photographs:</strong> Recent passport-size photos</li>
+          </ul>
+          <p>Requirements vary by bank and card type. Premium cards may need higher income documentation.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What credit score do I need to get approved? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>Most banks prefer a CIBIL score of <strong>750 or above</strong> for approval on standard cards. Here's a general guide:</p>
+          <ul>
+            <li><strong>750–900:</strong> Excellent – easy approval, best offers</li>
+            <li><strong>700–749:</strong> Good – likely approved with standard terms</li>
+            <li><strong>650–699:</strong> Fair – may face higher interest rates or lower limits</li>
+            <li><strong>Below 650:</strong> Poor – consider a secured card first</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">Does applying for a credit card hurt my credit score? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>Yes, slightly. When you apply, the bank does a <strong>hard inquiry</strong> on your credit report, which can lower your score by 5–10 points temporarily. Multiple applications in a short period are a bigger concern — it signals financial distress to lenders. Space out applications by at least 3–6 months.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">Can I get a credit card with no credit history? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>Yes! Options for building credit from scratch include:</p>
+          <ul>
+            <li><strong>Secured credit cards:</strong> Backed by a fixed deposit, easy to get</li>
+            <li><strong>Student credit cards:</strong> Designed for students with lower income requirements</li>
+            <li><strong>Add-on (supplementary) cards:</strong> Attached to a parent's or spouse's account</li>
+            <li><strong>Entry-level cards:</strong> Many banks offer cards for first-time applicants</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ REWARDS ══════════════ -->
+<div class="wrapper" id="rewards">
+  <div class="qna-section fade-in">
+    <h2>🎁 Rewards, Cashback & Points</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">How do credit card reward points work? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>Every time you spend, you earn points — typically 1 to 5 points per ₹100 spent, depending on the card and category. Accelerated rewards are often available for dining, travel, or online shopping. Points can be redeemed for:</p>
+          <ul>
+            <li>Flight tickets and hotel bookings</li>
+            <li>Cashback or statement credits</li>
+            <li>Gift vouchers and merchandise</li>
+            <li>Utility bill payments</li>
+          </ul>
+          <p>Points usually expire in 2–3 years, so redeem them before they lapse.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is cashback on a credit card? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>Cashback means you get a percentage of your spending back — directly credited to your account or adjusted against your bill. For example, a 5% cashback on grocery spending of ₹5,000 gives you ₹250 back. Cashback cards are simpler than points cards — what you earn is what you get, with no conversion complexity.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is a welcome bonus and how do I claim it? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>A welcome bonus is a one-time reward for new cardholders, often triggered by spending a minimum amount within the first few months. Examples: "Earn 10,000 bonus points when you spend ₹30,000 in the first 90 days." Read the fine print carefully — some bonuses require activation or are only available to first-time applicants of the issuer.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">Do reward points expire? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>Most reward points expire after <strong>2–3 years</strong> from the date of earning. Some cards reset expiry with each new transaction. Always check your card's specific policy. To avoid expiry, set a reminder to redeem before the deadline or use points for small redemptions regularly.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">Which type of card is better — cashback or rewards points? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <ul>
+            <li><strong>Cashback cards</strong> are best if you want simplicity and guaranteed value — great for everyday spending.</li>
+            <li><strong>Points/miles cards</strong> can offer higher value if you actively redeem for flights and hotels — but require more management.</li>
+          </ul>
+          <p>For most casual users, cashback cards are easier. Frequent travelers benefit more from points/miles programs.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="tip-box fade-in">
+    <h4>💡 Pro Tip: Maximize Your Rewards</h4>
+    <p>Use category-specific cards — one card for dining, another for fuel, another for online shopping. Each card can give you 5–10% on its specialty category, dramatically increasing total rewards without extra spending.</p>
+  </div>
+</div>
+
+
+
+<!-- ══════════════ FEES ══════════════ -->
+<div class="wrapper" id="fees">
+  <div class="qna-section fade-in">
+    <h2>💰 Fees & Charges Explained</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is an annual fee and is it worth paying? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>An annual fee is a yearly charge for owning the card — ranging from ₹500 to ₹10,000+. Premium cards charge more but offer richer benefits (airport lounges, concierge, high reward rates). Calculate if the benefits you actually use outweigh the fee. Many cards waive the annual fee if you spend a minimum amount per year.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is a late payment fee? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>If you miss your payment due date or pay less than the minimum amount, a late payment fee is charged — typically ₹100 to ₹1,300 depending on your outstanding balance. It also negatively impacts your credit score. Always set up auto-pay for at least the minimum due to avoid this.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is a cash advance fee? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>Using your credit card to withdraw cash from an ATM triggers a cash advance fee — usually 2.5–3% of the amount withdrawn (minimum ₹500). Worse, <strong>interest starts immediately</strong> with no grace period, at rates of 36–42% per annum. Avoid cash advances except in genuine emergencies.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is a foreign transaction fee? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>When you use your card abroad or on international websites, a foreign transaction fee (typically 1.5–3.5% of the transaction value) is charged to cover currency conversion costs. If you travel or shop internationally often, consider a card specifically designed for international use that waives this fee.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is an over-limit fee? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>If your spending exceeds your credit limit (when over-limit spending is enabled), the bank charges an over-limit fee — usually 2.5% of the excess amount. It's best to set up spending alerts so you never approach your limit accidentally.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Fee Comparison Table -->
+  <div class="section-header fade-in" style="margin-top:36px">
+    <div class="gold-line"></div>
+    <h2 class="section-title">Common Credit Card Fees at a Glance</h2>
+  </div>
+  <div class="table-wrap fade-in">
+    <table>
+      <thead>
+        <tr><th>Fee Type</th><th>Typical Amount</th><th>How to Avoid</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Annual Fee</td><td>₹500 – ₹10,000+</td><td>Meet spend waiver threshold or choose a free card</td></tr>
+        <tr><td>Late Payment Fee</td><td>₹100 – ₹1,300</td><td>Set up auto-pay for minimum due</td></tr>
+        <tr><td>Cash Advance Fee</td><td>2.5–3% (min ₹500)</td><td>Avoid ATM withdrawals; use UPI instead</td></tr>
+        <tr><td>Foreign Transaction Fee</td><td>1.5–3.5%</td><td>Use a zero-forex card abroad</td></tr>
+        <tr><td>Over-Limit Fee</td><td>2.5% of excess</td><td>Track spending; set alerts at 80% of limit</td></tr>
+        <tr><td>Returned Payment Fee</td><td>₹500 – ₹800</td><td>Ensure sufficient bank balance for auto-pay</td></tr>
+        <tr><td>Duplicate Statement Fee</td><td>₹100 – ₹300</td><td>Go paperless; access e-statements online</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+<!-- ══════════════ INTEREST & APR ══════════════ -->
+<div class="wrapper" id="interest">
+  <div class="qna-section fade-in">
+    <h2>📈 Interest Rates & APR</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is APR on a credit card? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p><strong>APR (Annual Percentage Rate)</strong> is the yearly interest rate charged on balances carried over from month to month. In India, credit card APRs typically range from <strong>24% to 48% per annum</strong>. This is very high, which is why paying your full balance every month is crucial to avoiding interest charges entirely.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">How is credit card interest calculated? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>Interest is calculated on the <strong>Average Daily Balance</strong> using this formula:</p>
+          <p><strong>Interest = (Balance × APR) ÷ 365 × Number of Days</strong></p>
+          <p>Example: If you carry a ₹10,000 balance at 36% APR for 30 days: (10,000 × 0.36) ÷ 365 × 30 = <strong>₹295.89</strong> in interest for just one month.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is the minimum payment and what happens if I only pay it? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>The minimum payment is usually 5% of the outstanding balance or ₹200–500, whichever is higher. Paying only the minimum:</p>
+          <ul>
+            <li>Avoids late fees and protects your credit score</li>
+            <li>But interest compounds on the remaining balance</li>
+            <li>A ₹50,000 balance at 36% APR paying only minimums could take <strong>years</strong> to repay and cost you far more than the original debt</li>
+          </ul>
+          <p>Always aim to pay more than the minimum — ideally the full balance.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is EMI conversion on a credit card? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>EMI (Equated Monthly Installment) conversion lets you split a large purchase into smaller monthly payments. Banks offer 3, 6, 9, 12, or 24-month EMI options. While it eases cash flow, EMI often comes with a processing fee (1–3%) and interest — check the effective cost before converting. Some cards offer <strong>no-cost EMI</strong> on partner merchants where the interest is subsidized.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ CREDIT SCORE ══════════════ -->
+<div class="wrapper" id="credit-score">
+  <div class="qna-section fade-in">
+    <h2>⭐ Credit Score & Credit Health</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">How does a credit card affect my credit score? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>Credit cards are one of the most powerful tools for building credit. They affect your score through:</p>
+          <ul>
+            <li><strong>Payment history (35%):</strong> Paying on time is the single biggest factor</li>
+            <li><strong>Credit utilization (30%):</strong> Keep usage below 30% of your limit</li>
+            <li><strong>Length of credit history (15%):</strong> Older accounts help your score</li>
+            <li><strong>Credit mix (10%):</strong> Having a card alongside loans improves diversity</li>
+            <li><strong>New inquiries (10%):</strong> Limit applications to avoid multiple hard pulls</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is credit utilization ratio and why does it matter? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>Credit utilization is the percentage of your available credit you're using. Formula: <strong>(Balance ÷ Credit Limit) × 100</strong>. If your limit is ₹1,00,000 and your balance is ₹40,000, your utilization is 40%.</p>
+          <p><strong>Best practice:</strong> Keep utilization below 30% (ideally below 10%) for a healthy credit score. High utilization signals financial stress to lenders.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">Does closing a credit card hurt my credit score? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>Yes, it can — in two ways:</p>
+          <ul>
+            <li>It <strong>reduces your total available credit</strong>, which increases your utilization ratio on remaining cards</li>
+            <li>It can <strong>shorten your average account age</strong> if you close an older card</li>
+          </ul>
+          <p>If possible, keep old cards open (even with a zero balance) especially if they have no annual fee. The longer your history, the better.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">How long does negative information stay on my credit report? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <ul>
+            <li><strong>Late payments:</strong> Up to 7 years</li>
+            <li><strong>Defaults / settlements:</strong> Up to 7 years</li>
+            <li><strong>Hard inquiries:</strong> 2 years</li>
+            <li><strong>Bankruptcies:</strong> Up to 10 years</li>
+          </ul>
+          <p>Despite staying on the report, the impact on your score fades over time as you add positive history. Consistent on-time payments are the fastest way to recover.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ══════════════ BALANCE & PAYMENTS ══════════════ -->
+<div class="wrapper" id="balance">
+  <div class="qna-section fade-in">
+    <h2>⚖️ Balance, Payments & Debt</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is a balance transfer and how does it work? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>A balance transfer allows you to move debt from a high-interest card to a new card that offers a <strong>low or 0% introductory APR</strong> for a promotional period (typically 6–18 months). This can save significant interest. Be aware of:</p>
+          <ul>
+            <li>Balance transfer fee: usually 1–3% of the amount transferred</li>
+            <li>What the APR becomes after the promotional period ends</li>
+            <li>You must still make minimum payments during the promo period</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">Is it better to pay my credit card in full or in installments? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p><strong>Always pay in full if possible.</strong> Paying the full statement balance by the due date means you pay <strong>zero interest</strong> and enjoy the float (spending today, paying next month). Installments always cost you more due to interest — the only exception is genuinely 0% no-cost EMI offers from merchants where the cost is subsidized.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What happens if I can't pay my credit card bill? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>If you can't pay the full amount, at minimum pay the <strong>minimum due</strong> to avoid late fees and credit score damage. If you truly cannot pay anything:</p>
+          <ul>
+            <li>Contact your bank immediately — many offer hardship programs</li>
+            <li>Request a temporary interest rate reduction or payment deferment</li>
+            <li>Consider credit counseling to negotiate settlements</li>
+            <li>Avoid ignoring the debt — it leads to collection calls and legal action</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ SECURITY ══════════════ -->
+<div class="wrapper" id="security">
+  <div class="qna-section fade-in">
+    <h2>🔒 Fraud Prevention & Security</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What should I do if my credit card is lost or stolen? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <ul>
+            <li><strong>Immediately block the card</strong> via your bank's app, website, or helpline</li>
+            <li>Report unauthorized transactions to the bank within 3 days</li>
+            <li>File a police FIR for a stolen card</li>
+            <li>Request a replacement card</li>
+            <li>Review your recent transactions for any fraudulent charges</li>
+          </ul>
+          <p>Under RBI guidelines, you are not liable for unauthorized transactions reported promptly. Delays can affect your liability.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is credit card skimming and how can I avoid it? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>Skimming involves a device installed on ATMs or POS terminals that secretly copies your card data. To protect yourself:</p>
+          <ul>
+            <li>Use contactless (tap) payments whenever possible</li>
+            <li>Cover the keypad when entering your PIN</li>
+            <li>Inspect ATMs for anything loose or unusual before inserting your card</li>
+            <li>Prefer ATMs inside bank branches over standalone machines</li>
+            <li>Enable SMS/email alerts for every transaction</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">How do I safely shop online with my credit card? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <ul>
+            <li>Only shop on websites with <strong>HTTPS</strong> (padlock icon in browser)</li>
+            <li>Never save your card details on unfamiliar websites</li>
+            <li>Use virtual card numbers for one-time online purchases (available on some cards)</li>
+            <li>Enable 3D Secure / OTP authentication</li>
+            <li>Use a dedicated card with a low limit exclusively for online shopping</li>
+            <li>Avoid shopping on public Wi-Fi</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is a chargeback and how do I file one? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>A chargeback is a reversal of a credit card transaction initiated by the bank on your behalf — typically when a merchant fails to deliver goods, charges you incorrectly, or you don't recognize a transaction. To file one:</p>
+          <ul>
+            <li>Contact the merchant first for a resolution</li>
+            <li>If unresolved, call your bank or raise a dispute in the app</li>
+            <li>Provide transaction details, screenshots, and communication with the merchant</li>
+            <li>Banks typically investigate within 45–90 days</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ══════════════ TYPES OF CARDS ══════════════ -->
+<div class="wrapper" id="types">
+  <div class="section-header fade-in">
+    <div class="gold-line"></div>
+    <h2 class="section-title">Types of Credit Cards</h2>
+    <p class="section-sub">Different cards serve different needs — here's a breakdown.</p>
+  </div>
+  <div class="info-grid fade-in">
+    <div class="info-card">
+      <span class="card-icon">🔒</span>
+      <h3>Secured Credit Card</h3>
+      <p>Backed by a fixed deposit. Ideal for beginners or those rebuilding credit. Credit limit equals FD amount. Converts to unsecured after 12–18 months of good behaviour.</p>
+    </div>
+    <div class="info-card">
+      <span class="card-icon">💸</span>
+      <h3>Cashback Card</h3>
+      <p>Earns a percentage of spending back as cash. Best for everyday spenders who want simple, guaranteed value without managing points programs.</p>
+    </div>
+    <div class="info-card">
+      <span class="card-icon">✈️</span>
+      <h3>Travel / Miles Card</h3>
+      <p>Earns airline miles or hotel points. Includes perks like airport lounge access, travel insurance, and zero forex fees. Best for frequent flyers.</p>
+    </div>
+    <div class="info-card">
+      <span class="card-icon">🛍️</span>
+      <h3>Shopping Card</h3>
+      <p>Accelerated rewards or cashback on e-commerce, retail, or specific merchant partners. Great for online shoppers and deal seekers.</p>
+    </div>
+    <div class="info-card">
+      <span class="card-icon">⛽</span>
+      <h3>Fuel Card</h3>
+      <p>Offers surcharge waivers and cashback on fuel purchases. Targeted at drivers with high monthly fuel bills at partner petrol stations.</p>
+    </div>
+    <div class="info-card">
+      <span class="card-icon">👑</span>
+      <h3>Premium / Super-Premium Card</h3>
+      <p>High annual fees (₹5,000–₹50,000+) but includes golf club access, concierge, high reward rates, global lounge access, and luxury lifestyle benefits.</p>
+    </div>
+    <div class="info-card">
+      <span class="card-icon">🎓</span>
+      <h3>Student Card</h3>
+      <p>Low income threshold, low credit limit. Perfect for college students building their first credit history with minimal risk.</p>
+    </div>
+    <div class="info-card">
+      <span class="card-icon">🏢</span>
+      <h3>Business Credit Card</h3>
+      <p>Designed for SMEs and self-employed individuals. Higher limits, expense tracking tools, employee cards, and business-specific rewards on travel, office supplies, and subscriptions.</p>
+    </div>
+    <div class="info-card">
+      <span class="card-icon">🤝</span>
+      <h3>Co-branded Card</h3>
+      <p>Issued in partnership with a specific brand (e.g., Amazon, Flipkart, Air India). Offers maximum rewards when used with the partner brand's ecosystem.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ TRAVEL ══════════════ -->
+<div class="wrapper" id="travel">
+  <div class="qna-section fade-in">
+    <h2>✈️ Travel Credit Cards Q&A</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is airport lounge access and how does it work? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>Airport lounge access allows cardholders to enter premium airport lounges that offer free food, drinks, Wi-Fi, showers, and a comfortable waiting area. Access is typically provided through:</p>
+          <ul>
+            <li><strong>Priority Pass:</strong> Global network of 1,300+ lounges</li>
+            <li><strong>DreamFolks / Dreamfolks:</strong> India-specific network</li>
+            <li><strong>Direct Tie-ups:</strong> With specific airline or airport lounges</li>
+          </ul>
+          <p>Most cards offer 2–8 complimentary visits per year. Additional visits cost ₹2,000–₹2,500 each.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">Does travel insurance come free with credit cards? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>Many premium travel cards include complimentary travel insurance covering:</p>
+          <ul>
+            <li>Flight delay/cancellation coverage</li>
+            <li>Lost baggage reimbursement</li>
+            <li>Emergency medical expenses abroad</li>
+            <li>Trip cancellation due to illness</li>
+          </ul>
+          <p>Coverage is typically activated only when you <strong>book the travel using that specific card</strong>. Always read policy terms and check coverage limits before relying on card insurance alone.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ BUSINESS ══════════════ -->
+<div class="wrapper" id="business">
+  <div class="qna-section fade-in">
+    <h2>🏢 Business Credit Cards</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">What is the difference between a personal and business credit card? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <ul>
+            <li><strong>Business cards</strong> offer higher credit limits, employee add-on cards, and spending reports by category</li>
+            <li><strong>Rewards</strong> on business cards focus on business expenses: travel, office supplies, cloud subscriptions, dining</li>
+            <li><strong>Liability:</strong> Business cards may have the owner personally liable; corporate cards may not</li>
+            <li><strong>Tax benefits:</strong> Business expenses on a dedicated card are easier to track and claim as deductions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">Can a sole proprietor or freelancer get a business credit card? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">
+          <p>Yes! Most banks issue business credit cards to sole proprietors, freelancers, and self-employed individuals. You'll typically need:</p>
+          <ul>
+            <li>GST registration or business registration proof</li>
+            <li>Last 2 years' ITR showing business income</li>
+            <li>Bank account statements (business account preferred)</li>
+            <li>Good personal credit score (since you're personally liable)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ══════════════ CHECKLIST ══════════════ -->
+<div class="wrapper">
+  <div class="page-section fade-in">
+    <h2>✅ Before You Apply – Credit Card Checklist</h2>
+    <p>Use this checklist every time you consider a new credit card:</p>
+    <ul class="checklist">
+      <li>Check your credit score — aim for 750+ for best approvals</li>
+      <li>Calculate your monthly spending across key categories (dining, fuel, online, travel)</li>
+      <li>Compare annual fee vs. the value of benefits you'll actually use</li>
+      <li>Check the interest rate (APR) if you ever carry a balance</li>
+      <li>Read the rewards redemption terms — check expiry and minimum redemption</li>
+      <li>Confirm if there's a welcome bonus and what the spend threshold is</li>
+      <li>Check foreign transaction fees if you travel or shop internationally</li>
+      <li>Understand the credit limit you're likely to receive</li>
+      <li>Set up auto-pay for at least the minimum due before activating</li>
+      <li>Enable transaction alerts via SMS and email immediately on activation</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ══════════════ GLOSSARY ══════════════ -->
+<div class="wrapper" id="glossary">
+  <div class="section-header fade-in">
+    <div class="gold-line"></div>
+    <h2 class="section-title">Credit Card Glossary</h2>
+    <p class="section-sub">Key terms every credit card user should know.</p>
+  </div>
+  <div class="glossary-grid fade-in">
+    <div class="gloss-item"><div class="gloss-term">APR (Annual Percentage Rate)</div><div class="gloss-def">The yearly interest rate charged on carried balances. In India, typically 24–48%.</div></div>
+    <div class="gloss-item"><div class="gloss-term">Billing Cycle</div><div class="gloss-def">The period (usually ~30 days) during which transactions are recorded before a statement is generated.</div></div>
+    <div class="gloss-item"><div class="gloss-term">Cash Advance</div><div class="gloss-def">Withdrawing cash using your credit card. Carries high fees and immediate interest with no grace period.</div></div>
+    <div class="gloss-item"><div class="gloss-term">Chargeback</div><div class="gloss-def">A bank-initiated reversal of a transaction, typically due to fraud or merchant disputes.</div></div>
+    <div class="gloss-item"><div class="gloss-term">CIBIL Score</div><div class="gloss-def">India's primary credit score (300–900). 750+ is considered excellent by most lenders.</div></div>
+    <div class="gloss-item"><div class="gloss-term">Credit Limit</div><div class="gloss-def">The maximum amount you can borrow on your credit card at any given time.</div></div>
+    <div class="gloss-item"><div class="gloss-term">Credit Utilization</div><div class="gloss-def">The percentage of your credit limit currently in use. Keeping it below 30% is recommended.</div></div>
+    <div class="gloss-item"><div class="gloss-term">Grace Period</div><div class="gloss-def">Time between statement date and payment due date (21–25 days) — no interest if paid in full.</div></div>
+    <div class="gloss-item"><div class="gloss-term">Hard Inquiry</div><div class="gloss-def">A credit check triggered when you apply for credit. Temporarily lowers your score by 5–10 points.</div></div>
+    <div class="gloss-item"><div class="gloss-term">Minimum Payment</div><div class="gloss-def">The smallest amount you must pay each cycle to avoid late fees. Usually 5% of balance or ₹200–500.</div></div>
+    <div class="gloss-item"><div class="gloss-term">Statement Balance</div><div class="gloss-def">Total amount owed at the end of your billing cycle as shown on your statement.</div></div>
+    <div class="gloss-item"><div class="gloss-term">Balance Transfer</div><div class="gloss-def">Moving debt from one card to another, usually to take advantage of a lower promotional interest rate.</div></div>
+    <div class="gloss-item"><div class="gloss-term">No-Cost EMI</div><div class="gloss-def">An installment option where the interest is subsidized by the merchant, making it effectively interest-free.</div></div>
+    <div class="gloss-item"><div class="gloss-term">Priority Pass</div><div class="gloss-def">A global membership program providing access to 1,300+ airport lounges worldwide, included with many premium cards.</div></div>
+    <div class="gloss-item"><div class="gloss-term">Secured Card</div><div class="gloss-def">A credit card backed by a fixed deposit as collateral. Ideal for credit beginners.</div></div>
+    <div class="gloss-item"><div class="gloss-term">Forex Markup Fee</div><div class="gloss-def">A fee charged on international transactions for currency conversion, typically 1.5–3.5%.</div></div>
+  </div>
+</div>
+
+
+
+<!-- ══════════════ ABOUT ══════════════ -->
+<div class="wrapper" id="about">
+  <div class="page-section fade-in">
+    <h2>About CreditCardGuide</h2>
+    <p>Welcome to <strong>CreditCardGuide</strong> — an independent financial education platform operated by <strong>FinWise Media Pvt. Ltd.</strong>, a registered company dedicated to helping Indian consumers make smarter, more informed financial decisions.</p>
+    <div class="info-grid" style="margin:24px 0;">
+      <div class="info-card">
+        <span class="card-icon">🏢</span>
+        <h3>Company</h3>
+        <p><strong>FinWise Media Pvt. Ltd.</strong><br>CIN: U74999MH2020PTC342187<br>Incorporated under the Companies Act, 2013</p>
+      </div>
+      <div class="info-card">
+        <span class="card-icon">📍</span>
+        <h3>Registered Office</h3>
+        <p>Unit 4B, Prestige Tower,<br>Bandra Kurla Complex,<br>Mumbai, Maharashtra – 400051, India</p>
+      </div>
+      <div class="info-card">
+        <span class="card-icon">📞</span>
+        <h3>Contact Details</h3>
+        <p>Phone: +91-22-4890-7700<br>Email: support@creditcardguide.info<br>Mon–Sat: 10:00 AM – 6:00 PM IST</p>
+      </div>
+    </div>
+    <p>Our editorial team consists of certified financial educators and banking professionals with over 20 years of combined experience in consumer finance, credit management, and personal banking. We cover the full spectrum of credit card knowledge — from choosing your very first card to advanced strategies for maximizing rewards, managing debt, and protecting yourself from fraud.</p>
+    <div class="tip-box">
+      <h4>📋 Our Mission</h4>
+      <p>To make credit card education free, accessible, and unbiased for every Indian consumer — from first-time cardholders to seasoned users looking to optimize their financial decisions.</p>
+    </div>
+    <p><strong>Disclaimer:</strong> The information on this website is for general educational purposes only and does not constitute financial advice. FinWise Media Pvt. Ltd. is not registered with SEBI or RBI as a financial advisor. Always consult a qualified financial advisor for decisions specific to your situation.</p>
+  </div>
+</div>
+
+<!-- ══════════════ PRIVACY POLICY ══════════════ -->
+<div class="wrapper" id="privacy">
+  <div class="page-section fade-in">
+    <h2>Privacy Policy</h2>
+    <p><strong>Last Updated: January 2025</strong></p>
+    <p>CreditCardGuide ("we", "our", "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.</p>
+    <p><strong>Information We Collect:</strong> We may collect non-personally identifiable information such as browser type, pages visited, and time spent on the site through cookies and analytics tools (e.g., Google Analytics). If you submit a contact form, we collect the name, email, and message you provide.</p>
+    <p><strong>Use of Information:</strong> Information is used solely to improve user experience, respond to inquiries, and analyze site traffic. We do not sell, trade, or share your personal data with third parties except as required by law.</p>
+    <p><strong>Google AdSense:</strong> We use Google AdSense to display advertisements. Google may use cookies to serve ads based on your browsing history. You can opt out via <a href="https://adssettings.google.com" target="_blank" rel="noopener" style="color:var(--gold)">Google Ad Settings</a>.</p>
+    <p><strong>Cookies:</strong> Our site uses cookies for analytics and advertising. You may disable cookies in your browser settings, though this may affect site functionality.</p>
+    <p><strong>Third-Party Links:</strong> Our website may contain links to third-party sites. We are not responsible for the privacy practices of those sites.</p>
+    <p><strong>Contact:</strong> For privacy-related queries, use our Contact form below.</p>
+  </div>
+</div>
+
+<!-- ══════════════ CONTACT ══════════════ -->
+<div class="wrapper" id="contact">
+  <div class="page-section fade-in">
+    <h2>Contact Us</h2>
+    <p>Have a question about credit cards that isn't answered here? Found an error? Want to suggest a topic? Our team at <strong>FinWise Media Pvt. Ltd.</strong> would love to hear from you.</p>
+    <div class="info-grid" style="margin:20px 0 28px;">
+      <div class="info-card">
+        <span class="card-icon">📧</span>
+        <h3>Email Us</h3>
+        <p>General: <strong>support@creditcardguide.info</strong><br>Editorial: <strong>editorial@creditcardguide.info</strong><br>Response within 24–48 hours</p>
+      </div>
+      <div class="info-card">
+        <span class="card-icon">📞</span>
+        <h3>Call Us</h3>
+        <p><strong>+91-22-4890-7700</strong><br>Monday to Saturday<br>10:00 AM – 6:00 PM IST</p>
+      </div>
+      <div class="info-card">
+        <span class="card-icon">🏢</span>
+        <h3>Visit Us</h3>
+        <p>Unit 4B, Prestige Tower,<br>Bandra Kurla Complex,<br>Mumbai – 400051, India</p>
+      </div>
+    </div>
+    <div class="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="e.g. Rahul Sharma" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="you@email.com" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <select id="subject">
+          <option>Question about a credit card topic</option>
+          <option>Report an error on the site</option>
+          <option>Suggest a new Q&A topic</option>
+          <option>General feedback</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" rows="5" placeholder="Write your message here..."></textarea>
+      </div>
+      <button class="btn-submit" onclick="handleSubmit()">Send Message</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="font-size:1.4rem;">💳 Credit<span style="color:#fff">CardGuide</span></div>
+        <p>Your free, independent resource for credit card education. Making smart financial decisions accessible to everyone.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="#basics">CC Basics</a></li>
+          <li><a href="#rewards">Rewards & Points</a></li>
+          <li><a href="#fees">Fees Explained</a></li>
+          <li><a href="#interest">Interest & APR</a></li>
+          <li><a href="#credit-score">Credit Score</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Topics</h4>
+        <ul>
+          <li><a href="#balance">Balance & Payments</a></li>
+          <li><a href="#security">Fraud & Security</a></li>
+          <li><a href="#types">Card Types</a></li>
+          <li><a href="#travel">Travel Cards</a></li>
+          <li><a href="#business">Business Cards</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="#glossary">Glossary</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 CreditCardGuide. For educational purposes only. Not financial advice.</span>
+      <div class="footer-links">
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#about">Disclaimer</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ── NAV SCROLL: intercept every #hash link click ──
+  document.addEventListener('DOMContentLoaded', function () {
+
+    function goToSection(hash) {
+      var id = hash.replace('#', '');
+      var target = document.getElementById(id);
+      if (!target) return false;
+      var headerHeight = document.querySelector('header') ? document.querySelector('header').offsetHeight : 60;
+      var targetTop = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 10;
+      window.scrollTo({ top: targetTop, behavior: 'smooth' });
+      return true;
+    }
+
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest('a');
+      if (!link) return;
+      var href = link.getAttribute('href');
+      if (!href || href.charAt(0) !== '#') return;
+      if (href === '#') return;
+      e.preventDefault();
+      goToSection(href);
+    });
+
+    // Handle page load with hash in URL
+    if (window.location.hash) {
+      setTimeout(function () { goToSection(window.location.hash); }, 100);
+    }
+  });
+
+  // ── FAQ Toggle ──
+  function toggle(btn) {
+    var answer = btn.nextElementSibling;
+    var isOpen = btn.classList.contains('open');
+    document.querySelectorAll('.faq-q.open').forEach(function(b) {
+      b.classList.remove('open');
+      b.nextElementSibling.classList.remove('open');
+    });
+    if (!isOpen) {
+      btn.classList.add('open');
+      answer.classList.add('open');
+    }
+  }
+
+  // ── Scroll Animation ──
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) e.target.classList.add('visible');
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(function(el) { observer.observe(el); });
+
+  // ── Contact Form ──
+  function handleSubmit() {
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var msg = document.getElementById('message').value.trim();
+    if (!name || !email || !msg) { alert('Please fill in all required fields.'); return; }
+    alert('Thank you, ' + name + '! Your message has been received. We\'ll get back to you at ' + email + ' within 24–48 hours.');
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('message').value = '';
+  }
+</script>
+
+</body>
+</html>
